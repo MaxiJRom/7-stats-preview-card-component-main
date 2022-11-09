@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
+
+
 <body>
+  <main>
 
-  Get insights that help your business grow.
+    <section class="card">
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <div class="card__left">
+        <h1 class="inter bold white-100">Get <span class="inter bold violet"> insights</span> that help your business grow.
+        </h1>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+        <p class="inter regular white-60"> Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        <div class="datos">
+          <div>
+            <div class="datos__nro  bold white-100 inter">10k+</div>
+            <div class="datos__heading white-60 uppercase lexend">companies</div>
+          </div>
+          <div>
+            <div class="datos__nro bold white-100 inter"> 314</div>
+            <div class="datos__heading white-60 uppercase lexend">templates</div>
+          </div>
+          <div>
+            <div class="datos__nro bold white-100 inter uppercase">12m+</div>
+            <div class="datos__heading white-60 uppercase lexend">queries</div>
+          </div>
+        </div>
+        <!--.datos-->
+
+      </div> <!-- card__left-->
+
+
+      <div class="card__img">
+        <img src="./images/image-header-desktop.jpg" alt="Imagen de mujeres trabajando en una oficina">
+      </div>
+
+
+    </section>
+    <!--.card-->
+
+  </main>
+  <div class="attribution lexend">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/MaxiJRom">MaxiJRom</a>.
   </div>
 </body>
+
 </html>
